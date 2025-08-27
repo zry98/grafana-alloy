@@ -261,7 +261,7 @@ func (im *ImportFile) ModulePath() string {
 	path, err := util.ExtractDirPath(im.args.Filename)
 
 	if err != nil {
-		level.Error(im.managedOpts.Logger).Log("msg", "failed to extract module path", "module path", im.args.Filename, "err", err)
+		level.Error(im.managedOpts.Logger).Log("msg", "failed to extract module path", "module_path", im.args.Filename, "err", err)
 	}
 	return path
 }

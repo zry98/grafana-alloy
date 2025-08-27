@@ -117,7 +117,7 @@ func (j *logfmtStage) Process(labels model.LabelSet, extracted map[string]interf
 	if extractedEntriesCount != len(j.inverseMapping) {
 		level.Debug(j.logger).Log("msg", fmt.Sprintf("found only %d out of %d configured mappings in logfmt stage", extractedEntriesCount, len(j.inverseMapping)))
 	}
-	level.Debug(j.logger).Log("msg", "extracted data debug in logfmt stage", "extracted data", fmt.Sprintf("%v", extracted))
+	level.Debug(j.logger).Log("msg", "extracted data debug in logfmt stage", "extracted_data", fmt.Sprintf("%v", extracted))
 }
 
 // Name implements Stage

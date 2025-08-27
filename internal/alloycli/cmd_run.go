@@ -247,7 +247,7 @@ func (fr *alloyRun) Run(cmd *cobra.Command, configPath string) error {
 	// injected.
 	otel.SetTracerProvider(t)
 
-	level.Info(l).Log("boringcrypto enabled", boringcrypto.Enabled)
+	level.Info(l).Log("boringcrypto_enabled", boringcrypto.Enabled)
 
 	// Set the memory limit, this will honor GOMEMLIMIT if set
 	// If there is a cgroup on linux it will use that

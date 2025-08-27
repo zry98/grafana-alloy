@@ -240,7 +240,7 @@ func (t *tailer) tail(ctx context.Context, handler loki.EntryHandler) error {
 		}()
 	}
 
-	level.Info(t.log).Log("msg", "opened log stream", "start time", lastReadTime)
+	level.Info(t.log).Log("msg", "opened log stream", "start_time", lastReadTime)
 
 	ch := handler.Chan()
 	reader := bufio.NewReader(stream)

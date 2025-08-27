@@ -538,7 +538,7 @@ func (c *Component) Update(args component.Arguments) error {
 		c.Rules = append(c.Rules, *ruleGenericApiKey)
 	}
 
-	level.Info(c.opts.Logger).Log("Compiled regexes for secret detection", len(c.Rules))
+	level.Info(c.opts.Logger).Log("compiled_regexes_for_secret_detection", len(c.Rules))
 
 	return nil
 }

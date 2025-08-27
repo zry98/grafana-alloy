@@ -158,7 +158,7 @@ func (r *patternStage) Process(labels model.LabelSet, extracted map[string]inter
 		}
 	}
 	if Debug {
-		level.Debug(r.logger).Log("msg", "extracted data debug in pattern stage", "extracted data", fmt.Sprintf("%v", extracted))
+		level.Debug(r.logger).Log("msg", "extracted data debug in pattern stage", "extracted_data", fmt.Sprintf("%v", extracted))
 	}
 }
 

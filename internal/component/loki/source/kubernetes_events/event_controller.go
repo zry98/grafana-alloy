@@ -183,7 +183,7 @@ func (ctrl *eventController) onUpdate(ctx context.Context, oldObj, newObj interf
 	}
 
 	if oldEvent.GetResourceVersion() == newEvent.GetResourceVersion() {
-		level.Debug(ctrl.log).Log("msg", "resource version didn't change, ignoring call to onUpdate", "resource version", newEvent.GetResourceVersion())
+		level.Debug(ctrl.log).Log("msg", "resource version didn't change, ignoring call to onUpdate", "resource_version", newEvent.GetResourceVersion())
 		return
 	}
 
